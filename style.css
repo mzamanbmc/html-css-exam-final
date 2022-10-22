@@ -1,0 +1,1093 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'MuseoModerno', cursive;
+}
+span,strong,p,li,a,input{
+    font-family: 'Jost', sans-serif;
+}
+span,strong{
+    display: inline-block;
+}
+h1{
+    font-size: 72px;
+    font-weight: 700;
+}
+span, p, a, li{
+    font-size: 16px;
+}
+ul, li{
+    list-style: none;
+}
+h2{
+    font-size: 48px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: #1C1C25;
+}
+.common-btn{
+    padding: 5px 15px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+.common-btn::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    background: #72DFE9;
+    border-radius: 50px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+.common-btn::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: transparent;
+    border: 2px solid #333333;
+    border-radius: 50px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+.common-btn:hover::after{
+    top: 0;
+    left: 0;
+}
+.common-btn:hover::before{
+    border: 2px solid #72DFE9;
+}
+.common-btn:hover a{
+    color: #fff;
+}
+.text-blue{
+    color: #33358C;
+}
+.text-heading{
+    color: #333333;
+}
+
+
+/* ######################################### Header Section ######################################## */
+
+body.show header {
+    box-shadow: 0px 2px 5px #c7c3c387; 
+}
+body.show a{
+    color: #000;
+}
+header{
+    position: sticky;
+    top: 0;
+    background: #F8F8F8;
+    z-index: 999;
+    padding: 0 50px;
+}
+header h2 {
+    font-size: 35px;
+}
+header ul{
+    line-height: 50px;
+}
+header ul li{
+    position: relative;
+    line-height: 50px;
+}
+header ul li a.active{
+    color: #FF9083;
+}
+header ul li a{
+    color: #33358C;
+    font-size: 22px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+header ul li ul{
+    position: absolute;
+    width: 250px;
+    top: 115%;
+    padding: 10px 10px 10px 20px;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    background: inherit;
+    background: #fff;
+}
+header ul li ul li{
+    transition: all 0.3s ease-in-out;
+}
+header ul li ul li a{
+    color: #000 !important;
+}
+header ul li ul li:hover a{
+    color: #FF9083 !important;
+}
+.social-btn {
+    width: 45px;
+    height: 45px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.social-btn::after{
+    content: "";
+    position: absolute;
+    background: #FF9083;
+}
+.social-btn:hover::before{
+    border: 2px solid #FF9083;
+}
+header ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+header ul li:hover a{
+    color: #FF9083;
+}
+header ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 45%;
+    width: 8px;
+    height: 8px;
+    background: #FF9083;
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+header ul li:hover::after{
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+header ul li ul li::after{
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: -10%;
+    width: 8px;
+    height: 8px;
+    background: #FF9083;
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+header ul li ul li:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+header ul li ul li:hover{
+    transform: translateX(20px);
+}
+
+
+
+/* ################################# banner-section #####################################  */
+
+
+
+.banner-section{
+    padding: 100px 0;
+    background: #F8F8F8;
+}
+.banner-section span{
+    color: #33358C;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+.banner-section h1{
+    color: #333333;
+    font-weight: 700;
+}
+.banner-section p{
+    padding: 40px 0;
+}
+.banner-btn{
+    padding: 16px 40px !important;
+    position: relative;
+}
+.banner-btn a{
+    color: #1C1C25;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.banner-btn::after{
+    content: "";
+    position: absolute;
+    background: #FF9083;
+}
+.banner-btn:hover::before{
+    border: 2px solid #FF9083;
+}
+.banner-section .banner-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/* ########################################## consulting-section ################################################ */
+
+.consulting-section{
+    background: #1C1C25;
+}
+.consulting-section .con-span {
+    text-transform: uppercase;
+    background: #A8AAF1;
+    padding: 5px 16px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 160px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.consulting-section h2{
+    padding: 20px 0;
+}
+.consulting-section i{
+    font-size: 80px;
+    padding-bottom: 25px;
+}
+i.fa-regular.fa-lightbulb {
+    color: #FF9083;
+}
+i.fa-solid.fa-gear {
+    color: #72DFE9;
+}
+i.fa-solid.fa-rocket {
+    color: #A8AAF1;
+    transform: rotate(-45deg);
+}
+.consulting-section strong{
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+.consulting-section a {
+    color: #fff !important;
+    font-weight: 700;
+}
+.consulting-section a i{
+    font-size: 16px;
+}
+.consulting-section .card:hover strong{
+    color: #FF9083;
+}
+.consulting-section .card:hover .c-s2{
+    color: #72DFE9;
+}
+.consulting-section .card:hover .c-s3{
+    color: #A8AAF1;
+}
+.consulting-mid-section p{
+    padding-bottom: 16px;
+}
+.consulting-mid-section .card{
+    background: transparent;
+    box-sizing: border-box;
+    padding: 60px 20px;
+    margin: 0 10px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.consulting-mid-section .card:hover{
+    background: rgba(255, 255, 255, 0.093);
+} 
+span.common-btn.p-btnn i{
+    text-align: left;
+    transform: translateX(-5px);
+}
+span.common-btn.p-btnn {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    color: #fff;
+}
+span.common-btn.p-btnn::after{
+    content: "";
+    position: absolute;
+    background: #FF9083;
+    border-radius: 4px;
+    top: 9px;
+    left: 4px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+span.common-btn.p-btnn::before{
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+span.common-btn.p-btnn:hover::after{
+    top: 5px;
+    left: 0;
+}
+span.common-btn.p-btnn:hover::before{
+    border: 2px solid #FF9083;
+}
+.btn2::after {
+    background: #72DFE9 !important;
+}
+.btn2:hover::before {
+    border: 2px solid #72DFE9 !important;
+}
+.btn3::after {
+    background: #A8AAF1 !important;
+}
+.btn3:hover::before {
+    border: 2px solid #A8AAF1 !important;
+}
+.consulting-bottom-section{
+    padding-top: 100px;
+}
+.consulting-bottom-section h1{
+    font-size: 60px;
+}
+.consulting-bottom-section a {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+}
+.consulting-bottom-section .consult-btn{
+    position: relative;
+    padding: 20px 40px;
+}
+.consulting-bottom-section .consult-btn::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    background: #FF9083;
+    border-radius: 50px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+.consulting-bottom-section .consult-btn::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+.consulting-bottom-section .consult-btn:hover::after{
+    top: 0px;
+    left: 0px;
+}
+
+/* ############################################## Service Section ####################################################### */
+
+.service-section{
+    padding: 100px 0; 
+}
+.service-section .box{
+    border: 1px solid #ddd;
+    padding: 50px 30px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.service-top-section span {
+    background: #E7E7FB;
+    padding: 3px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.service-section .box .box-content i{
+    font-size: 60px;
+    color: #FF9083;
+    display: inline-block;
+    padding-bottom: 30px;
+    transition: 0.3s ease-in-out;
+}
+.service-section .box .box-content strong{
+    display: block;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.service-section .box .box-content p{
+    color: #72786F;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+.service-section .box span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(-45deg);
+}
+.service-section .box span i {
+    font-size: 35px;
+    color: #ddd;
+    transition: 0.3s ease-in-out;
+}
+.service-section .box:hover{
+    color: #fff;
+    background: #42424C;
+}
+.service-section .box:hover i{
+    color: #fff;
+}
+.service-section .box:hover p{
+    color: #fff;
+}
+.service-section .box:hover span i{
+    transform: rotate(360deg);
+}
+
+/* ########################################### Feture Section ################################################## */
+
+.feature-section{
+    padding: 50px 0;
+}
+
+.feature-section img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+.col-xl-8.text-white.rounded-4.p-5 {
+    background: #1C1C25 !important;
+}
+.feature-section .top-section span{
+    font-size: 16px;
+    background: #A8AAF1;
+    padding: 2px 16px;
+    border-radius: 8px;
+}
+.feature-section .top-section h2{
+    font-size: 48px;
+    padding: 15px 0;
+}
+.feature-section .top-section p{
+    color: #ddd;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.feature-section .bottom-section ul li{
+    padding-bottom: 10px;
+    position: relative;
+    padding-right: 80px;
+}
+.feature-section .bottom-section ul li::before{
+    content: "\f061";
+    font-family: FontAwesome;
+    font-weight: 800;
+    color: #FF9083;
+    position: absolute;
+    left: -30px;
+    font-size: 24px;
+}
+.feature-section .bottom-section ul li h3{
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+}
+.feature-section .bottom-section ul li p{
+    font-size: 18px;
+    color: #ddd;
+}
+.feature-section .bottom-section ul li:hover h3{
+    color: #FF9083;
+}
+
+/* ##################################### philosophy-section ######################################### */
+
+.philosophy-section{
+    padding: 80px 0;
+}
+.philosophy-section span {
+    background: #E7E7FB;
+    display: inline-block;
+    padding: 3px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+button#pills-home-tab {
+    color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 0px !important;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    margin-right: 20px;
+}
+button#pills-profile-tab {
+    color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 0px !important;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    margin-right: 20px;
+}
+button#pills-contact-tab {
+    color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 0px !important;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    margin-right: 20px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    border-bottom: 3px solid #72DFE9 !important;
+    color: #000 !important;
+}
+.tab-pane p {
+    padding-right: 250px;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+.philosophy-section img{
+    width: 100%;
+    border-radius: 16px;
+}
+.btnn1 i.fa-solid.fa-angle-right {
+    transform: translate(-5px, -5px);
+}
+span.common-btn.btnn1 {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    line-height: 25px;
+}
+span.common-btn.btnn1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    border: 2px solid #000;
+}
+span.common-btn.btnn1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    bottom: 0;
+    border-radius: 8px;
+    background: #A8AAF1;
+    transition: all 0.3s ease-in-out;
+}
+span.common-btn.btnn1:hover::after{
+    top: 0px;
+    left: 0px;
+}
+
+.more-section.d-flex.align-items-center.mt-5 a {
+    font-weight: 600;
+}
+
+/* #################################### Pricing Table Section ######################################### */
+
+.pricing-table-section{
+    padding: 100px 0;
+}
+.pricing-table-section h2{
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.pricing-table-section .card-top {
+    background: url(https://i.ibb.co/zSHQmML/svgexport-1.png) no-repeat center center;
+    background-size: 67%;
+    padding: 50px;
+    margin-top: 30px;
+}
+.pricing-table-section .card-top strong{
+    font-size: 20px;
+}
+.pricing-table-section .card-top h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+.pricing-table-section .card-top p{
+    font-size: 22px;
+}
+.pricing-table-section .card-bottom{
+    padding: 10px 50px;
+}
+.pricing-table-section .card-bottom ul li p{
+    font-size: 18px;
+}
+.pricing-table-section .card-bottom ul li i{
+    color: #24C373;
+}
+.pricing-table-section .card-btn{
+    padding-bottom: 50px;
+    display: inline-block;
+}
+.pricing-table-section .card-btn .card-btnn {
+    position: relative;
+    line-height: 40px;
+    padding: 10px 50px;
+}
+.pricing-table-section .card-btn .card-btnn::after{
+    content: "";
+    position: absolute;
+    background: #FF9083;
+    padding: 10px 50px !important;
+
+}
+.pricing-table-section .card-btn .card-btnn::before{
+    padding: 10px 50px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.pricing-table-section .card-btn .card-btnn2 {
+    position: relative;
+    line-height: 40px;
+    padding: 10px 50px;
+}
+.pricing-table-section .card-btn .card-btnn2::after{
+    content: "";
+    position: absolute;
+    background: #72DFE9;
+    padding: 10px 50px !important;
+}
+.pricing-table-section .card-btn .card-btnn2::before{
+    padding: 10px 50px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.pricing-table-section .card-btn .card-btnn3 {
+    position: relative;
+    line-height: 40px;
+    padding: 10px 50px;
+}
+.pricing-table-section .card-btn .card-btnn3::after{
+    content: "";
+    position: absolute;
+    background: #A8AAF1;
+    padding: 10px 50px !important;
+}
+.pricing-table-section .card-btn .card-btnn3::before{
+    padding: 10px 50px !important;
+    transition: all 0.3s ease-in-out;
+}
+.pricing-table-section .card-btn .card-btnn:hover::before{
+    border: 2px solid #FF9083;
+}
+.pricing-table-section .card-btn .card-btnn2:hover::before{
+    border: 2px solid #72DFE9;
+}
+.pricing-table-section .card-btn .card-btnn3:hover::before{
+    border: 2px solid #A8AAF1;
+}
+.pricing-table-section .card-btn span{
+    transition: all 0.3s ease-in-out;
+}
+.pricing-table-section .card-btn span:hover{
+    color: #fff !important;
+}
+
+/*  ########################################## Team Section ############################################# */
+
+.team-section{
+    padding: 80px 0;
+}
+.team-top-section span {
+    background: #e7e7fb;
+    padding: 3px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.team-top-section h2{
+    margin-bottom: 20px;
+}
+.team-section .figure{
+    transition: all 0.3s ease-in-out;
+}
+.team-section .figure1{
+    transform: translateY(30px);
+}
+.team-section .figure .f-img{
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.team-section .figure .f-img span {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.team-section .figure .f-img span i{
+    font-size: 32px;
+}
+.team-section .figure .f-img::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #A8AAF1;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.team-section .figure .f-img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    top: -8px;
+    left: -8px;
+    border-radius: 15px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.team-section .figure .f-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+.team-section .figure .f-content{
+    padding-top: 20px;
+}
+.team-section .figure .f-content strong{
+    font-size: 20px;
+}
+.social-btn-tw, .social-btn-fb, .social-btn-in {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.social-btn-tw::after{
+    content: "";
+    position: absolute;
+    background: #A8AAF1;
+}
+.social-btn-fb::after{
+    content: "";
+    position: absolute;
+    background: #FF9083;
+}
+.social-btn-tw a i {
+    position: relative;
+    left: -4px;
+}
+.social-btn-tw:hover::before{
+    border: 2px solid #A8AAF1;
+}
+.social-btn-fb:hover::before{
+    border: 2px solid #FF9083;
+}
+.team-section .figure:hover .f-img::after{
+    opacity: 0.6;
+    visibility: visible;
+}
+.team-section .figure:hover .f-img::before{
+    opacity: 1;
+    visibility: visible;
+}
+.team-section .figure:hover .f-img{
+    transform: translate(10px, 10px);
+}
+.team-section .figure1:hover .f-img{
+    transform: translate(10px, 10px);
+}
+.team-section .figure:hover .f-img span{
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+/* ######################################## FAQ Section ######################################## */
+
+.faq-section{
+    padding: 50px 0;
+}
+.faq-top-section span {
+    background: #E7E7FB;
+    padding: 3px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.accordion-item {
+    border: none;
+    outline: none;
+}
+.accordion-item button{
+    position: relative;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+}
+.accordion-item span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+}
+.accordion-item button:hover span{
+    border: 2px solid #000;
+    transition-delay: 0.15s;
+}
+.accordion-body {
+    padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+    text-align: justify;
+    line-height: 1.8rem;
+    font-size: 18px !important;
+    padding: 20px 50px !important;
+}
+button.accordion-button.rounded-pill.bg-light.text-black.py-3 {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    margin-bottom: 10px;
+    z-index: 2;
+    box-shadow: none;
+}
+button.accordion-button.rounded-pill.bg-light.text-black.py-3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #72DFE9;
+    border-radius: 50px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+button.accordion-button.rounded-pill.bg-light.text-black.py-3:hover::before{
+    top: 5px;
+    left: 5px;
+    opacity: 1;
+    visibility: visible;
+}
+button.accordion-button.rounded-pill.bg-light.text-black.py-3:hover::after{
+    transform: rotate(-90deg);
+}
+button.accordion-button.rounded-pill.bg-light.text-black.py-3:hover{
+    z-index: 2;
+}
+
+/* ################################################# Contact Section #################################################### */
+
+.contact-section{
+    padding: 50px 0;
+}
+form {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 80px;
+}
+.contact-section h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+input.form-control.rounded-pill {
+    padding: 14px;
+    margin-bottom: 20px;
+    background: #dddddd57;
+    font-size: 18px;
+    border: none;
+}
+textarea.form-control.rounded-5 {
+    background: #dddddd47;
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: 50px;
+    border: none;
+}
+.common-btn.contact-btn {
+    padding: 16px 30px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.common-btn.contact-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    background: #FF9083;
+    border-radius: 50px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+.common-btn.contact-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: transparent;
+    border: 2px solid #333333;
+    border-radius: 50px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+.common-btn.contact-btn:hover{
+    color: #fff;
+}
+.common-btn.contact-btn:hover::after{
+    top: 0;
+    left: 0;
+}
+.common-btn.contact-btn:hover::before{
+    border: 2px solid #FF9083;
+}
+input, textarea:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/* ############################################ footer Top Section ############################################ */
+
+.footer-top-section{
+    padding: 50px 0;
+    background: #1C1C25;
+}
+span.common-btn.footer-btnn {
+    position: relative;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 47px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+span.common-btn.footer-btnn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+span.common-btn.footer-btnn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    background: #A8AAF1;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.mailing-icon1 span.common-btn.footer-btnn::after{
+    background: #FF9083;
+}
+.mailing-icon2 span.common-btn.footer-btnn::after{
+    background: #72DFE9;
+}
+.footer-top-section .common-btn i {
+    line-height: 55px;
+}
+.common-btn.footer-btnn:hover::after{
+    top: 0;
+    left: 0;
+}
+.mailing-icon .common-btn.footer-btnn:hover::before{
+    border: 2px solid #A8AAF1;
+}
+.mailing-icon1 .common-btn.footer-btnn:hover::before{
+    border: 2px solid #FF9083;
+}
+.mailing-icon2 .common-btn.footer-btnn:hover::before{
+    border: 2px solid #72DFE9;
+}
+.footer-top-section .social-icon span{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+.footer-top-section .social-icon i{
+    color: #fff;
+}
+.footer-top-section .social-icon span:hover{
+    background: #72DFE9;
+}
+.footer-top-section .footer-menu span{
+    margin: 0 20px;
+}
+.footer-top-section .footer-menu span a{
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.footer-top-section .footer-menu span a:hover{
+    color: #FF9083;
+}
+
+/* ############################################## Footer Bottom Section ################################################ */
+
+.footer-bottom{
+    background: #1C1C25;
+    padding-bottom: 30px;
+
+}
+
+
